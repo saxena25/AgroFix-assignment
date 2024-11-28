@@ -1,0 +1,144 @@
+.nav-logo{
+    width: 10rem;
+    height: 100%;
+}
+
+.navbar-logo{
+    
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+.navbar-logo h2{
+    color: white;
+    font-size: 2rem;
+    margin-top: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 1px solid;
+    animation: typing 3s steps(15) forwards,
+    blink 1s step-end infinite;
+}
+
+@keyframes typing{
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 100%;
+    }
+    60%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+@keyframes blink{
+    50%{
+        border-color: transparent;
+    }
+}
+
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    /* border: 1px solid black; */
+    /* padding: 0 0.8rem; */
+    /* padding-left: 1.5rem; */
+    background-color: rgba(159, 171, 145, 0.954);
+    height: 5rem;
+}
+
+
+
+.right-navbar{
+    display: flex;
+    flex-direction: row;
+}
+
+.search-bar{
+    position: relative;
+    margin-top: 1rem;
+}
+
+.right-navbar>button{
+    height: 3rem;
+    margin-top: 1rem;
+    border-radius: 10px;
+    border: none;
+    width: 6rem;
+    padding: .5rem 0;
+    font-size: 1rem;
+    transition: transform 0.3s ease-out;
+    overflow: hidden;
+    /* font-weight: bold; */
+
+    &:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+    }
+}
+
+.cart-btn-wrapper{
+    position: relative;
+    transition: transform 0.3s ease-out;
+    /* overflow: hidden; */
+
+    &:hover{
+        transform: scale(1.1);
+        /* cursor: pointer; */
+    }
+}
+
+.cart-btn{
+    margin-left: 1rem;
+    padding: .9rem 1.5rem;
+    padding-left: 2.5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    /* overflow: hidden;
+    transition: transform 0.3s ease-out;
+    */
+    &:hover{
+        cursor: pointer;
+        /* transform: scale(1.1); */
+    } 
+}
+
+.nav-cart{
+    position: absolute;
+    top: 1.6rem;
+    left: 1.6rem;
+    width: 1.5rem;
+    
+}
+
+.nav-search{
+    width: 40rem;
+    height: 2.5rem;
+    padding-left:2.5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 15px;  
+    padding-right: .6rem;
+    border: none;
+}
+
+.search-icon{
+    position: absolute;
+    width: 2rem;
+    top: .1rem;
+    left: .3rem;
+}
